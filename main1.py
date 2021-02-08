@@ -4,11 +4,14 @@ def Vychitanie(x, y):
    return x - y
 def Umnojenie(x, y):
    return x * y
+def Delenie(x, y):
+   return x / y
 
 print("Vyberite zadachu.")
 print("1.Summirovanie")
 print("2.Vychitanie")
 print("3.Umnojenie")
+print("4.Delenie")
 
 choice = input("Выберите одно(1/2/3/4):")
 num1 = int(input("Введите первое число: "))
@@ -22,3 +25,8 @@ elif choice == '2':
 
 elif choice == '3':
    print(num1,"*",num2,"=", Umnojenie(num1,num2))
+
+elif choice == '4':
+   print(num1,"/",num2,"=", Delenie(num1,num2))
+else:
+   print("Такой команды нет.")
